@@ -12,7 +12,7 @@ class App extends Component {
 	constructor() {
 		super()
 		this.state = {
-			messages = []
+			messages: []
 		}
 	}
 
@@ -31,7 +31,9 @@ class App extends Component {
 				roomId: 19386161,
 				hooks: {
 					onNewMessage: message => {
-						console.log('message.text: ', message.text);
+						this.setState({
+							messages: [...this.state.messages, message]
+						})
 					}
 				}
 			})
@@ -42,9 +44,9 @@ class App extends Component {
     return (
       <div className="App">
         <RoomList />
-		<MessageList />
-		<SendMessageForm />
-		<NewRoomForm />
+				<MessageList messages= {this.state.messages} />
+				<SendMessageForm />
+				<NewRoomForm />
       </div>
     );
   }
