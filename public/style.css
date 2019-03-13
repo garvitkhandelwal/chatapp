@@ -91,10 +91,11 @@ html, body {
 }
 
 .new-room-form form {
+    padding-top: 20px;
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .new-room-form input {
