@@ -773,6 +773,14 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
+"@pusher/chatkit-client@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@pusher/chatkit-client/-/chatkit-client-1.4.1.tgz#784da47b25dd0f2ce50b9441b95344dd52c6571c"
+  integrity sha512-1Xa2FDuv0uNYqXiaZ2bWwX8QlTPMsC622URa1vZ/DjhI+/6dd4fs0Newjn5GI1eKuxjWPntAvv/o36jQas1ssw==
+  dependencies:
+    "@pusher/platform" "^0.16.1"
+    ramda "^0.25.0"
+
 "@pusher/chatkit@^0.7.18":
   version "0.7.18"
   resolved "https://registry.yarnpkg.com/@pusher/chatkit/-/chatkit-0.7.18.tgz#7c239cfa76728a9382bb94bb1c8ddc91fdf6ce37"
@@ -780,6 +788,11 @@
   dependencies:
     pusher-platform "^0.15.2"
     ramda "^0.25.0"
+
+"@pusher/platform@^0.16.1":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@pusher/platform/-/platform-0.16.2.tgz#d6493b171903dd42a9fcd650a90d352af5e344c2"
+  integrity sha512-i8FHrurPFs2nmTDFHP1OMcFvtmZFGLUtOj46Ick/KOopTWnVv1FJkruMIV+wahP4mKl9e8XNzqe62HEXDh/n+A==
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.0.0":
   version "4.0.0"

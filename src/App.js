@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Chatkit from '@pusher/chatkit';
+import Chatkit from '@pusher/chatkit-client';
 import MessageList from './components/MessageList.js'
 import NewRoomForm from './components/NewRoomForm.js'
 import RoomList from './components/RoomList.js'
@@ -94,9 +94,9 @@ class App extends Component {
     return (
       <div className="App">
         <RoomList
-					roomId = {this.state.roomId}
-					subscribeToRoom= {this.subscribeToRoom}
-					rooms= {[...this.state.joinableRooms, ...this.state.joinedRooms]}/>
+					roomId={this.state.roomId}
+					subscribeToRoom={this.subscribeToRoom}
+					rooms={[...this.state.joinableRooms, ...this.state.joinedRooms]}/>
 				<MessageList
 					roomId={this.state.roomId}
 					messages= {this.state.messages} />
